@@ -1,4 +1,3 @@
-=begin
 require 'rails_helper'
 
 RSpec.describe 'Hola mundo', type: :system do
@@ -8,4 +7,4 @@ RSpec.describe 'Hola mundo', type: :system do
       expect(page).to have_content('Hola mundo')
     end
   end
-=end
+end
