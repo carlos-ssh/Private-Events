@@ -1,0 +1,2 @@
+module PrivateEventsHelper
+end
