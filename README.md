@@ -1,24 +1,66 @@
-# README
+# Getting Started
+##
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project was created to understand more about  Authentication using Devise, User sessions and cookies
 
-Things you may want to cover:
+To get a local copy up and running follow these simple example steps.
 
-* Ruby version
+![project](https://github.com/cgcarlosg/Member-Only/blob/feature/app/assets/images/member-only.jpg)
 
-* System dependencies
+## Prerequisites
+#
+Computer running Mac OS, Windows, or Linux Ubuntu. Internet browser: Firefox, Google Chrome, etc
+#
+- Install Ruby
 
-* Configuration
+- Install Rails
+#
+After installing Ruby, you need to install bundler to be able to use bundle install to install gems and dependancies for this project.
+#
+## Setup
+- Download the code or copy the git repository to your computer
+- type https://github.com/cgcarlosg/Member-Only.git in your terminal
+- Type cd Member-Only in the terminal.
+- Type bundle install
+- Type yarn install
+- Type rails db:migrate
+- Run with the comand: rails s to start the server.
 
-* Database creation
+#
+## Usage
+Navigate to the folder you cloned the git repository and to run our project type rails server in your terminal to start the a localhost so you can see the website. In your browser enter to localhost:3000 or the address that was output in rails server.
+#
+## Author 1
+👤  Carlos Gutierrez
 
-* Database initialization
+- GitHub:  [@cgcarlosg](https://github.com/cgcarlosg)
+- Twitter: [@cgcarlosg1](https://twitter.com/cgcarlosg1)
+- LinkedIn: [@carlosalbeniogutierrez](www.linkedin.com/in/carlosalbeniogutierrez)
 
-* How to run the test suite
+#
+## Author 2
+👤 Carlos Robles
 
-* Services (job queues, cache servers, search engines, etc.)
+- GitHub: [@carlos-ssh](https://github.com/carlos-ssh)
+- Twitter: [@aom.robles](https://twitter.com/aom.robles)
+- LinkedIn: [@carlos-ssh](www.linkedin.com/in/carlos-ssh)
 
-* Deployment instructions
+#
+ ## 📝 License 
+- This project is MIT licensed.
+#
 
-* ...
+## 🤝 Contribution
+Contributions, issues, and feature requests are welcome!
+#
+
+## Acknowledgements
+- Microverse
+- The Odin Project: Sessions, Cookies and Authentication
+- Youtube Tutorials: Andy Leverenz Web-Crunch
+- Beter README Templates
+- Rails Guides
+
+#
+## ⭐ Show your support
+Give a ⭐️ if you like this project!
