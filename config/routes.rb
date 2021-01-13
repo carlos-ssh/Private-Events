@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  get 'private_events/index'
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
-  root to: "home#index"
+  get 'sessions/new'
+  get 'users/index'
+  get 'signup' => 'users#new', as: 'signup'
+  get 'login' => 'sessions#new', as: 'login'
+  get 'logout' => 'sessions#destroy', as: 'logout'
+
+  root to: 'users#index'
+
+  resources :users
+  resources :sessions
 end
