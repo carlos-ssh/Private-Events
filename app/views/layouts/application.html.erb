@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PrivateEvents</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Private-Events</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
     <%= yield %>
-    <%= render 'users/form' %>
+
+<h1>UPCOMING EVENTS</h1><br/>
+<h1>LAST EVENTS</h1>
+
+
   </body>
+
 </html>
