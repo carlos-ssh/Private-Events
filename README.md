@@ -17,6 +17,7 @@ Computer running Mac OS, Windows, or Linux Ubuntu. Internet browser: Firefox, Go
 #
 After installing Ruby, you need to install bundler to be able to install gems and dependancies for this application.
 #
+
 ## Setup
 - Download the code or copy the git repository to your computer
 - type https://github.com/carlos-ssh/Private-Events.git in your terminal
