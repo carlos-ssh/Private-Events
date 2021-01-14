@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class EventsController < ApplicationController
   include EventsHelper
   before_action :require_login, except: [:index]
@@ -21,9 +23,8 @@ class EventsController < ApplicationController
       flash[:success] = "Event '#{@event.name}' created!"
       redirect_to @event
     else
-      flash[:alert] = "Some error!"
+      flash[:alert] = 'Some error!'
       render 'new'
     end
   end
-
 end

@@ -29,6 +29,7 @@ After installing Ruby, you need to install bundler to be able to install gems an
 #
 ## Usage
 Navigate to the folder you cloned the git repository and to run our project type rails server in your terminal to start the a localhost so you can see the website. In your browser enter to localhost:3000 or the address that was output in rails server.
+
 #
 ## Author 1
 👤  Carlos Gutierrez

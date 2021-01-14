@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   root 'events#index'
 
@@ -6,7 +8,7 @@ Rails.application.routes.draw do
   get 'logout' => 'sessions#destroy', as: 'logout'
 
   resources :users
-  resources :sessions, only: [:new, :create, :destroy]
+  resources :sessions, only: %i[new create destroy]
   resources :events
-  resources :enrollments, only: [:create, :destroy, :update]
+  resources :enrollments, only: %i[create destroy update]
 end
