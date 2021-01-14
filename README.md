@@ -50,12 +50,12 @@ Navigate to the folder you cloned the git repository and to run our project type
 #
  ## 📝 License 
 - This project is MIT licensed.
-#
 
+#
 ## 🤝 Contribution
 Contributions, issues, and feature requests are welcome!
-#
 
+#
 ## Acknowledgements
 - Microverse
 - The Odin Project: Active Record Queries and Associations.
