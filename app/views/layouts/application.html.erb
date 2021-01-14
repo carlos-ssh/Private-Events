@@ -6,15 +6,24 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= stylesheet_link_tag 'https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
 
+  <% if flash[:notice] %>
+    <div class="notification is-primary global-notification">
+      <p class="notice"><%= notice %></p>
+    </div>
+  <% end %>
+  <% if flash[:alert] %>
+    <div class="notification is-danger global-notification">
+      <p class="alert"><%= alert %></p>
+    </div>
+  <% end %>
+
   <nav class="navbar is-success" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-   
         <%= link_to root_path, class: "navbar-item" do %>
           <h1 class="title is-4">Private Events</h1>
         <% end %>
@@ -30,25 +39,31 @@
         <div class="navbar-end">
           <div class="navbar-item">
             <div class="field is-grouped">
-              <button>Create Event</button>
-
-                 <% if current_user %>
-
-              <p class="control">
-                <%= link_to current_user.name, user_path(current_user), class: "button is-white" %>
-              </p>
-              <p>
-                <%= link_to "Logout", logout_path, class: "button is-white" %>
-              </p>
-
-            <% else %>
-
-              <p class="control">
-              <%= link_to 'Sign In', login_path, class: "button is-white" %>
-            </p>
-              <p class="control">
-                  <%= link_to 'Sign Up', signup_path, class: "button is-white" %>
+                <p class="control">
+                  <%= link_to "Create event", new_event_path, class: "button is-white" %>
                 </p>
+
+                <% if current_user %>
+
+                  <p class="control">
+                    <%= link_to current_user.name, user_path(current_user), class: "button is-white" %>
+                  </p>
+
+                  <p>
+                    <%= link_to "Logout", logout_path, class: "button is-white" %>
+                  </p>
+                  
+                  <% else %>
+                  
+                  <p class="control">
+                  <%= link_to 'Sign In', login_path, class: "button is-white" %>
+                  </p>
+                  
+
+
+                  <p class="control">
+                    <%= link_to 'Sign Up', signup_path, class: "button is-white" %>
+                  </p>
 
                 <% end %>
             </div>

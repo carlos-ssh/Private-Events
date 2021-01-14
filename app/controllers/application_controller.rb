@@ -1,10 +1,16 @@
 class ApplicationController < ActionController::Base
-    helper_method :current_user
+  private
 
-    def current_user
-        if session[:user_id]
-          @current_user ||= User.find(session[:user_id])
-        end
-      end
+  def require_login
+    unless current_user
+      redirect_to login_path, :alert => 'Sign up or Log in to see the events!'
+    end
+  end
+
+  def current_user
+    @current_user ||= User.find(session[:user_id]) if session[:user_id]
+  end
+  
+  helper_method :current_user
 
 end
