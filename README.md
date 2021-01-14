@@ -5,7 +5,7 @@ This project was created to understand more about  Authentication using Devise, 
 
 To get a local copy up and running follow these simple example steps.
 
-![project](https://github.com/cgcarlosg/Member-Only/blob/feature/app/assets/images/member-only.jpg)
+![project]()
 
 ## Prerequisites
 #
@@ -15,11 +15,11 @@ Computer running Mac OS, Windows, or Linux Ubuntu. Internet browser: Firefox, Go
 
 - Install Rails
 #
-After installing Ruby, you need to install bundler to be able to use bundle install to install gems and dependancies for this project.
+After installing Ruby, you need to install bundler to be able to install gems and dependancies for this application.
 #
 ## Setup
 - Download the code or copy the git repository to your computer
-- type https://github.com/cgcarlosg/Member-Only.git in your terminal
+- type https://github.com/carlos-ssh/Private-Events.git in your terminal
 - Type cd Member-Only in the terminal.
 - Type bundle install
 - Type yarn install
@@ -56,8 +56,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## Acknowledgements
 - Microverse
-- The Odin Project: Sessions, Cookies and Authentication
-- Youtube Tutorials: Andy Leverenz Web-Crunch
+- The Odin Project: Active Record Queries and Associations.
 - Beter README Templates
 - Rails Guides
 

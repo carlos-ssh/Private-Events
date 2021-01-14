@@ -1,1 +1,51 @@
-<h1>Index Events</h1>
+<div class="top">
+  <div class="section">
+    <h2 class="title is-2 has-text-centered">UPCOMING EVENTS</h2>
+    <div class="container">
+      <% @events.upcoming.each do |event| %>
+        <div class="column is-12">
+          <div class="card">
+            <header class="card-header">
+              <%= link_to event.name, event_path(event), class: "card-header-title is-centered has-text-white" %>
+            </header>
+            <div class="card-content has-text-white">
+              <div class="content has-text-justified">
+                <%= event.description.truncate_words(20) %>
+              </div>
+            </div>
+            <footer class="card-footer has-text-white">
+              <p class="card-footer-item is-narrow"><%= event.date %></p>
+              <p class="card-footer-item"><%= event.location %></p>
+            </footer>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<div class="bottom">
+  <div class="section">
+    <h2 class="title is-2 has-text-centered">PAST EVENTS</h2>
+    <div class="container">
+      <% @events.past.each do |event| %>
+        <div class="column is-12">
+          <div class="card">
+            <header class="card-header">
+              <%= link_to event.name, event_path(event), class: "card-header-title is-centered has-text-white" %>
+            </header>
+            <div class="card-content has-text-white">
+              <div class="content has-text-justified">
+                <%= event.description.truncate_words(20) %>
+              </div>
+            </div>
+            <footer class="card-footer has-text-white">
+              <p class="card-footer-item"><%= event.date %></p>
+              <p class="card-footer-item"><%= event.location %></p>
+            </footer>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

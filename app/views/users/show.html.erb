@@ -18,9 +18,7 @@
           </div>
 
           <div class="column has-text-centered">
-            <h3 class="subtitle is-3">Upcoming Events: 
-              <%= @user.attended_events.where('date >= ?', Date.today).count %>
-            </h3>
+            <h3 class="subtitle is-3">Upcoming Events: <%= @user.attended_events.where('date >= ?', Date.today).count %></h3>
             <ul>
               <% if @user.attended_events.where('date >= ?', Date.today).count.zero? %>
                 <p>No planned parties</p>

@@ -13,9 +13,13 @@
 ActiveRecord::Schema.define(version: 2021_01_14_173150) do
 
   create_table "enrollments", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
+    t.integer "user_id"
+    t.integer "event_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
     t.integer "status"
+    t.index ["event_id"], name: "index_enrollments_on_event_id"
+    t.index ["user_id"], name: "index_enrollments_on_user_id"
   end
 
   create_table "events", force: :cascade do |t|
@@ -33,5 +37,5 @@ ActiveRecord::Schema.define(version: 2021_01_14_173150) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
-
+  
 end
