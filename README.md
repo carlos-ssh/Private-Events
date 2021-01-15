@@ -51,7 +51,7 @@ Navigate to the folder you cloned the git repository and to run our project type
 - LinkedIn: [@carlos-ssh](www.linkedin.com/in/carlos-ssh)
 #
 
- ## 📝 License 
+## 📝 License 
 - This project is MIT licensed.
 #
 
