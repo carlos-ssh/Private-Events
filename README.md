@@ -5,7 +5,7 @@ This project was created to understand more about  Authentication using Devise, 
 
 To get a local copy up and running follow these simple example steps.
 
-![project]()
+![project](https://github.com/carlos-ssh/Private-Events/blob/feats/app/assets/images/screenshot.jpg)
 
 ## Prerequisites
 #
