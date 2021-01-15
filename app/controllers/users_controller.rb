@@ -23,7 +23,6 @@ class UsersController < ApplicationController
     @attended_events = @user.attended_events
     @past_events = current_user.attended_events.past
     @upcoming_events = current_user.attended_events.upcoming
-
   end
 
   private
