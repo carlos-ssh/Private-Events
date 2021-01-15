@@ -56,7 +56,7 @@ Navigate to the folder you cloned the git repository and to run our project type
 #
 
 ## 🤝 Contribution
-Contributions, issues, and feature requests are welcome!
+Contributions, issues(https://github.com/carlos-ssh/Private-Events/issues), and feature requests are welcome!
 #
 
 ## Acknowledgements
