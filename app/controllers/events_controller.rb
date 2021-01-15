@@ -8,6 +8,8 @@ class EventsController < ApplicationController
 
   def show
     @event = Event.find(params[:id])
+    @past_events = Event.past.order(date: :DESC)
+    @upcoming_events = Event.upcoming.order(date: :ASC)
   end
 
   def new

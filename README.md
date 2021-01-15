@@ -60,10 +60,12 @@ Contributions, issues(https://github.com/carlos-ssh/Private-Events/issues), and 
 #
 
 ## Acknowledgements
-- Microverse
-- The Odin Project: Active Record Queries and Associations.
-- Beter README Templates
-- Rails Guides
+- [Microverse](https://microverse.pathwright.com/library/fast-track-curriculum/69047/path/step/37867496/)
+- The Odin Project: 
+- [x]  [Active Record Queries](https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-queries) 
+- [x]  [Active Record Associations](https://www.theodinproject.com/courses/ruby-on-rails/lessons/active-record-associations)
+- [Beter README Templates](https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax)
+- [Rails Guides](https://guides.rubyonrails.org/active_record_validations.html)
 #
 
 ## ⭐ Show your support
