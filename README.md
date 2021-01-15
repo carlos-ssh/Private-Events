@@ -10,7 +10,7 @@ To get a local copy up and running follow these simple example steps.
 ## Prerequisites
 #
 
-Computer running Mac OS, Windows, or Linux Ubuntu. Internet browser: Firefox, Google Chrome, etc
+Computer running Mac OS, Windows, or Linux. Internet browser: Firefox, Google Chrome, etc
 #
 
 - Install Ruby
