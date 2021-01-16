@@ -1,5 +1,4 @@
 class EventsController < ApplicationController
- 
   before_action :require_login, except: [:index]
 
   def index
@@ -27,6 +26,7 @@ class EventsController < ApplicationController
       render 'new'
     end
   end
+
   def event_params
     params.require(:event).permit(:name, :date, :location, :description, :user_id)
   end
